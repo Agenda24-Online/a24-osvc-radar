@@ -19,8 +19,8 @@ a{color:#ff5b8a}.empty{padding:42px;text-align:center;color:var(--muted);border:
 <div id="grid" class="grid"></div></main>
 <script>
 let jobs=[];const esc=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
-async function load(){try{jobs=await fetch("./data/jobs.json?"+Date.now()).then(r=>r.json())}catch(e){jobs=[]}render()}
+async function load(){try{const r=await fetch("./data/jobs.json?ts="+Date.now(),{cache:"no-store"});if(!r.ok)throw new Error("HTTP "+r.status);jobs=await r.json()}catch(e){console.error("Načtení nabídek selhalo:",e)}render()}
 function render(){const q=document.querySelector("#q").value.toLowerCase(),a=area.value,s=status.value;const out=jobs.filter(j=>(!a||j.area===a)&&(!s||j.status===s)&&(!q||JSON.stringify(j).toLowerCase().includes(q)));
 total.textContent=jobs.length;fresh.textContent=jobs.filter(j=>j.status==="new").length;grid.innerHTML=out.length?out.map(j=>`<article class="card ${j.status==="new"?"new":""}"><div><span class="badge">${esc(j.area)}</span><span class="badge">${esc(j.source)}</span></div><h2>${esc(j.title)}</h2><div class="meta">${esc(j.company)} · ${esc(j.location)} · nalezeno ${esc(j.found_at)}</div><p>${esc(j.summary)}</p><p class="proof"><b>Důkaz OSVČ:</b> ${esc(j.osvc_proof)}</p><a href="${esc(j.url)}" target="_blank" rel="noopener">Otevřít nabídku →</a></article>`).join(""):'<div class="empty">Zatím nebyla nalezena žádná ověřená nová nabídka.</div>'}
-document.querySelectorAll("input,select").forEach(x=>x.addEventListener("input",render));load();
+document.querySelectorAll("input,select").forEach(x=>x.addEventListener("input",render));load();setInterval(load,60000);document.addEventListener("visibilitychange",()=>{if(!document.hidden)load()});
 </script></body></html>
