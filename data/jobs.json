@@ -78,5 +78,37 @@
     "osvc_proof": "Úvazek je výslovně uveden jako: „Plný úvazek, Zkrácený úvazek, Práce na ŽL“.",
     "fit_score": 68,
     "status": "new"
+  },
+  {
+    "id": "inwork-6433108",
+    "title": "Pravidelné čištění a úklid bytových domů v Praze",
+    "company": "APsystem s.r.o.",
+    "area": "Manuální práce",
+    "source": "INwork.cz",
+    "url": "https://www.inwork.cz/brigady/praha/praha/praha-8/6433108-pravidelne-cisteni-a-uklid-bytovych-domu-v-praze/",
+    "location": "Praha 8",
+    "remote": false,
+    "found_at": "2026-07-16T14:06:47+02:00",
+    "published_at": "2026-07-13",
+    "summary": "Pravidelný dopolední úklid bytových domů, v zimě také úklid sněhu. Nástup ihned, termín nabídky do 31. 12. 2026. Jazyk: v požadavcích není uvedena angličtina ani jiný cizí jazyk.",
+    "osvc_proof": "Aktivní nabídka výslovně uvádí: „Vhodné i pro: Důchodce, OSVČ, MD“.",
+    "fit_score": 72,
+    "status": "new"
+  },
+  {
+    "id": "inwork-6415643",
+    "title": "Kurýr v Praze a okolí – výdělek až 4 000 Kč/den",
+    "company": "DOFEK COMPANY s.r.o.",
+    "area": "Manuální práce",
+    "source": "INwork.cz",
+    "url": "https://www.inwork.cz/brigady/praha/praha/praha-6/6415643-kuryr-v-praze-a-okoli-vydelek-az-4-000-kc-den/",
+    "location": "Praha 6 a okolí",
+    "remote": false,
+    "found_at": "2026-07-16T14:06:47+02:00",
+    "published_at": "2026-07-01",
+    "summary": "Rozvoz nákupů v Praze a okolí, služební auto i domů a flexibilní plánování časových bloků. Jazyk: požadována pouze základní čeština A2 pro domluvu se zákazníkem; cizí jazyk uveden není.",
+    "osvc_proof": "Nabídka výslovně požaduje: „Spolupráci na Živnostenský list (OSVČ).“",
+    "fit_score": 70,
+    "status": "new"
   }
 ]
