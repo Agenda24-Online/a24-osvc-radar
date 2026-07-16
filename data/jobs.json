@@ -46,5 +46,37 @@
     "osvc_proof": "Nabídka výslovně uvádí: „Typ pracovního poměru: Práce na živnostenský list (IČO)“ a „Možnost spolupráce na IČO (živnostenský list)“.",
     "fit_score": 76,
     "status": "new"
+  },
+  {
+    "id": "easy-prace-605895",
+    "title": "Podpora SW + péče o klienty + implementace + školitel",
+    "company": "SmartDORLAND, a.s.",
+    "area": "Lektor",
+    "source": "Easy-práce.cz",
+    "url": "https://www.easy-prace.cz/nabidka/podpora-sw-pece-o-klienty-implementace-skolitel/605895",
+    "location": "Praha–Žižkov / příležitostně z domova",
+    "remote": true,
+    "found_at": "2026-07-16T16:40:00+02:00",
+    "published_at": null,
+    "summary": "Podpora uživatelů e-mailem, telefonem a chatem, implementace cloudové platformy, nastavení systému a online i prezenční školení. Jazyk: v úplném výčtu požadavků není uvedena angličtina ani jiný cizí jazyk.",
+    "osvc_proof": "Úvazek je výslovně uveden jako: „Plný úvazek, Zkrácený úvazek, Práce na ŽL“.",
+    "fit_score": 93,
+    "status": "new"
+  },
+  {
+    "id": "easy-prace-605940",
+    "title": "Administrativní pracovník | 35–45 000 Kč",
+    "company": "Mgr. Veronika Rudolfová, Ph.D. / klient Zdeněk Šimek",
+    "area": "Online práce",
+    "source": "Easy-práce.cz",
+    "url": "https://www.easy-prace.cz/nabidka/administrativni-pracovnik-35-45-000-kc/605940",
+    "location": "Středočeský kraj / příležitostně z domova",
+    "remote": true,
+    "found_at": "2026-07-16T16:40:00+02:00",
+    "published_at": null,
+    "summary": "Administrativní podpora, zadávání dat, evidence dokumentů a kancelářská agenda; inzerát nabízí příležitostný home office. Jazyk: v úplném výčtu požadavků není uvedena angličtina ani jiný cizí jazyk.",
+    "osvc_proof": "Úvazek je výslovně uveden jako: „Plný úvazek, Zkrácený úvazek, Práce na ŽL“.",
+    "fit_score": 68,
+    "status": "new"
   }
 ]
