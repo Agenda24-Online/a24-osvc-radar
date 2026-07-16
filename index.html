@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="cs"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A24 OSVČ Radar</title>
+<style>
+:root{--bg:#030712;--panel:#080b16;--accent:#ec0044;--text:#fff;--muted:#9ca3af;--line:#20283a}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.5 Arial,sans-serif}
+header{padding:28px clamp(18px,4vw,54px);border-bottom:1px solid var(--line);background:linear-gradient(135deg,#080b16,#130813)}
+h1{margin:0 0 6px;font-size:clamp(28px,4vw,48px)}h1 span{color:var(--accent)}.sub{color:var(--muted)}
+main{padding:24px clamp(18px,4vw,54px)}.stats,.filters{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+.stat,.filters select,.filters input{background:var(--panel);border:1px solid var(--line);color:var(--text);border-radius:10px;padding:12px}
+.stat strong{color:var(--accent);font-size:22px}.filters input{min-width:260px;flex:1}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:16px}.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px}
+.card.new{border-color:var(--accent)}.meta,.proof{color:var(--muted);font-size:13px}.badge{display:inline-block;padding:4px 8px;border-radius:99px;background:#24101a;color:#ff7ba1;margin:0 6px 8px 0}
+a{color:#ff5b8a}.empty{padding:42px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:14px}
+</style></head><body>
+<header><h1>A24 <span>OSVČ Radar</span></h1><div class="sub">Odborné zakázky a čištění oken · pouze IČO / OSVČ / B2B</div></header>
+<main><div class="stats"><div class="stat"><strong id="total">0</strong><br>celkem</div><div class="stat"><strong id="fresh">0</strong><br>nových</div></div>
+<div class="filters"><input id="q" placeholder="Hledat v nabídkách"><select id="area"><option value="">Všechny oblasti</option><option>Digitální služby</option><option>Lektor</option><option>Čištění oken</option></select><select id="status"><option value="">Všechny stavy</option><option value="new">Nové</option><option value="seen">Prohlédnuté</option><option value="replied">Odpovězeno</option><option value="rejected">Zamítnuto</option></select></div>
+<div id="grid" class="grid"></div></main>
+<script>
+let jobs=[];const esc=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
+async function load(){try{jobs=await fetch("./data/jobs.json?"+Date.now()).then(r=>r.json())}catch(e){jobs=[]}render()}
+function render(){const q=document.querySelector("#q").value.toLowerCase(),a=area.value,s=status.value;const out=jobs.filter(j=>(!a||j.area===a)&&(!s||j.status===s)&&(!q||JSON.stringify(j).toLowerCase().includes(q)));
+total.textContent=jobs.length;fresh.textContent=jobs.filter(j=>j.status==="new").length;grid.innerHTML=out.length?out.map(j=>`<article class="card ${j.status==="new"?"new":""}"><div><span class="badge">${esc(j.area)}</span><span class="badge">${esc(j.source)}</span></div><h2>${esc(j.title)}</h2><div class="meta">${esc(j.company)} · ${esc(j.location)} · nalezeno ${esc(j.found_at)}</div><p>${esc(j.summary)}</p><p class="proof"><b>Důkaz OSVČ:</b> ${esc(j.osvc_proof)}</p><a href="${esc(j.url)}" target="_blank" rel="noopener">Otevřít nabídku →</a></article>`).join(""):'<div class="empty">Zatím nebyla nalezena žádná ověřená nová nabídka.</div>'}
+document.querySelectorAll("input,select").forEach(x=>x.addEventListener("input",render));load();
+</script></body></html>
