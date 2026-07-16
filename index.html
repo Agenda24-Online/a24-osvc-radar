@@ -13,9 +13,9 @@ main{padding:24px clamp(18px,4vw,54px)}.stats,.filters{display:flex;gap:12px;fle
 .card.new{border-color:var(--accent)}.meta,.proof{color:var(--muted);font-size:13px}.badge{display:inline-block;padding:4px 8px;border-radius:99px;background:#24101a;color:#ff7ba1;margin:0 6px 8px 0}
 a{color:#ff5b8a}.empty{padding:42px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:14px}
 </style></head><body>
-<header><h1>A24 <span>OSVČ Radar</span></h1><div class="sub">Odborné zakázky a čištění oken · pouze IČO / OSVČ / B2B</div></header>
+<header><h1>A24 <span>OSVČ Radar</span></h1><div class="sub">Online práce z celé ČR · fyzická a manuální práce v Praze · pouze IČO / OSVČ / B2B</div></header>
 <main><div class="stats"><div class="stat"><strong id="total">0</strong><br>celkem</div><div class="stat"><strong id="fresh">0</strong><br>nových</div></div>
-<div class="filters"><input id="q" placeholder="Hledat v nabídkách"><select id="area"><option value="">Všechny oblasti</option><option>Digitální služby</option><option>Lektor</option><option>Čištění oken</option></select><select id="status"><option value="">Všechny stavy</option><option value="new">Nové</option><option value="seen">Prohlédnuté</option><option value="replied">Odpovězeno</option><option value="rejected">Zamítnuto</option></select></div>
+<div class="filters"><input id="q" placeholder="Hledat v nabídkách"><select id="area"><option value="">Všechny oblasti</option><option>Online práce</option><option>Digitální služby</option><option>Lektor</option><option>Manuální práce</option><option>Čištění oken</option></select><select id="status"><option value="">Všechny stavy</option><option value="new">Nové</option><option value="seen">Prohlédnuté</option><option value="replied">Odpovězeno</option><option value="rejected">Zamítnuto</option></select></div>
 <div id="grid" class="grid"></div></main>
 <script>
 let jobs=[];const esc=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
