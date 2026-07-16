@@ -46,21 +46,5 @@
     "osvc_proof": "Nabídka výslovně uvádí: „Typ pracovního poměru: Práce na živnostenský list (IČO)“ a „Možnost spolupráce na IČO (živnostenský list)“.",
     "fit_score": 76,
     "status": "new"
-  },
-  {
-    "id": "jenprace-j0ppe7",
-    "title": "Úklid kanceláří a komerčních prostor v Praze",
-    "company": "Andulka services s.r.o.",
-    "area": "Manuální práce",
-    "source": "JenPráce.cz",
-    "url": "https://www.jenprace.cz/nabidka/j0ppe7/uklid-kancelari-a-komercnich-prostor-v-praze",
-    "location": "Praha",
-    "remote": false,
-    "found_at": "2026-07-16T13:05:40+02:00",
-    "published_at": "2026-05-22",
-    "summary": "Úklid kanceláří, restaurací, obchodů, dalších komerčních prostor a společných prostor bytových domů po celé Praze. Dlouhodobá spolupráce s možností volit si úklidový den a objem práce.",
-    "osvc_proof": "V poli „Smluvní vztah“ je výslovně uvedeno: „Práce na živnostenský list (OSVČ)“.",
-    "fit_score": 82,
-    "status": "new"
   }
 ]
