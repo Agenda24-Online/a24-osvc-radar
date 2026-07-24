@@ -268,7 +268,7 @@
     "summary": "Markování zboží na pokladně, příjem plateb a komunikace se zákazníky a vedoucími. Praxe je vítaná, ale zaměstnavatel zaučí; nástup ihned a možnost volby směn. Jazykové ověření: celý inzerát je v češtině a v požadavcích není uvedena angličtina ani jiný cizí jazyk.",
     "osvc_proof": "Aktivní nabídka výslovně uvádí v poli „Vhodné i pro“ možnost „OSVČ“.",
     "fit_score": 61,
-    "status": "new",
+    "status": "expired",
     "reply_suggestion": "Dobrý den,\n\nmám zájem o práci pokladního v supermarketu v Praze. Jsem spolehlivý, pečlivý, zodpovědný a nekonfliktní, mám čistý trestní rejstřík a k zákazníkům přistupuji slušně a vstřícně. Pracuji jako OSVČ a mohu se přizpůsobit domluveným směnám.\n\nProsím o bližší informace k místu výkonu práce a podmínkám spolupráce.\n\nS pozdravem\nMartin Řezníček"
   },
   {
@@ -302,7 +302,7 @@
     "summary": "Kompletně vzdálená výpomoc se správou sociálních sítí: jednoduché grafiky, úpravy Instagram Highlights a krátké texty k příspěvkům. Požadována samostatnost, cit pro vizuál, flexibilita a rychlá reakce na podklady. Jazykové ověření: celý inzerát je v češtině a neobsahuje požadavek na angličtinu ani jiný cizí jazyk.",
     "osvc_proof": "V detailu je výslovně uvedeno „Vhodné i pro: OSVČ“; nabídka je aktivní a má funkční odpověď.",
     "fit_score": 88,
-    "status": "new",
+    "status": "expired",
     "reply_suggestion": "Dobrý den,\n\nreaguji na nabídku Social Media Asistent. Jsem OSVČ Agenda24 a věnuji se online marketingu, tvorbě obsahu a digitální grafice v nástrojích Adobe. Umím připravit vizuálně sladěné příspěvky, krátké texty i podklady pro sociální sítě, pracuji samostatně a dokážu rychle reagovat na stručné zadání. Vzdálená a průběžná spolupráce mi vyhovuje.\n\nS pozdravem\nMartin Řezníček"
   },
   {
@@ -372,5 +372,22 @@
     "fit_score": 61,
     "status": "new",
     "reply_suggestion": "Dobrý den,\n\nreaguji na nabídku pomocného kuchaře v Café Teodoro v Hostivaři. Pracuji jako OSVČ na živnostenský list, jsem spolehlivý, pečlivý a samostatný, mám čistý trestní rejstřík a mohu se rychle zaučit do přípravy a výdeje jídel. Rád se domluvím na směnách a termínu nástupu.\n\nS pozdravem\nMartin Řezníček"
+  },
+  {
+    "id": "predvyber-2001269742",
+    "title": "Upisovatel/ka pojištění",
+    "company": "PŘEDVÝBĚR.CZ a.s. / klient z českého pojistného trhu",
+    "area": "Online práce",
+    "source": "PŘEDVÝBĚR.CZ",
+    "url": "https://www.predvyber.cz/cs/nabidky-prace/upisovatel-ka-pojisteni/2001269742",
+    "location": "Praha 3 – Žižkov / home office",
+    "remote": true,
+    "found_at": "2026-07-24T07:57:37+02:00",
+    "published_at": "2026-07-20",
+    "summary": "Upisování podnikatelských a průmyslových rizik, posuzování podkladů, příprava nabídek a smluvní dokumentace a komunikace s makléři. Nabídka umožňuje home office. Jazykové ověření: celý původní český inzerát byl zkontrolován a neobsahuje požadavek na angličtinu ani jiný cizí jazyk. Pozice však požaduje zkušenost s upisováním pojištění, proto je shoda s profilem nižší.",
+    "osvc_proof": "Původní inzerát výslovně uvádí: „Spolupráci na IČO“.",
+    "fit_score": 42,
+    "status": "new",
+    "reply_suggestion": "Dobrý den,\n\nrád bych reagoval na nabídku Upisovatel/ka pojištění. Jako OSVČ Agenda24 pracuji samostatně s firemními klienty, připravuji podklady a návrhy řešení, pečlivě pracuji s daty a dokumentací a více než deset let školím software. Mám zkušenosti s Microsoft 365, digitálními systémy, automatizacemi a srozumitelnou komunikací se zákazníky. Přímou praxi v úpisu pojištění zatím nemám, nabízím ale pečlivost, odpovědnost a rychlé osvojení odborných postupů. Rád bych se dozvěděl, zda je u pozice možná odborná adaptace.\n\nS pozdravem\nMartin Řezníček"
   }
 ]
